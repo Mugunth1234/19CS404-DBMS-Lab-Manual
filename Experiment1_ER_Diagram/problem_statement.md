@@ -26,29 +26,20 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 
 
 ### Entities and Attributes
+<img width="1077" height="369" alt="image" src="https://github.com/user-attachments/assets/aba60714-7e6b-4b16-8a19-6cb3efa54701" />
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+<img width="1082" height="510" alt="image" src="https://github.com/user-attachments/assets/799e3851-a792-422b-bd3e-813c7db10677" />
+
 
 ### Assumptions
-- 
-- 
-- 
-
----
+1.Each member must have at least one active membership.
+2.A program may have multiple trainers, but at least one is mandatory.
+3.Members can attend multiple sessions; attendance is recorded separately.
+4.Personal training sessions are modeled as “Session” with specific trainer and member.
+5.Payments can be for either membership fees or personal sessions
 
 # Scenario B: City Library Event & Book Lending System
 
@@ -64,33 +55,23 @@ The Central Library wants to manage book lending and cultural events.
 - Overdue fines apply for late returns.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+<img width="1066" height="549" alt="image" src="https://github.com/user-attachments/assets/c70e8daf-dd8b-46cd-ab71-72a71d8ed4a1" />
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+<img width="1083" height="476" alt="image" src="https://github.com/user-attachments/assets/8d7c386a-807b-446d-9783-fa717b0c16ac" />
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+<img width="1075" height="446" alt="image" src="https://github.com/user-attachments/assets/13569170-994e-41e4-8674-d194cc4d659a" />
 
 ### Assumptions
-- 
-- 
-- 
-
----
+1.A member must exist before borrowing a book or registering for an event.
+2.A book can only be borrowed by one member at a time.
+3.Every event must be hosted in exactly one room.
+4.Events may have zero or multiple speakers.
+5.Overdue fines are calculated and stored in Loan.
 
 # Scenario C: Restaurant Table Reservation & Ordering
 
@@ -106,38 +87,24 @@ A popular restaurant wants to manage reservations, orders, and billing.
 - Waiters assigned to serve reservations.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_restaurant.png)
+<img width="1067" height="676" alt="image" src="https://github.com/user-attachments/assets/f1acbb65-8ea3-4d3f-a94e-c07353db344e" />
+
 
 ### Entities and Attributes
-
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+<img width="1282" height="603" alt="image" src="https://github.com/user-attachments/assets/fd00b55c-b7c1-4544-b52a-cd55fb0e4d45" />
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+<img width="1267" height="607" alt="image" src="https://github.com/user-attachments/assets/24148c69-c4e3-443c-acc1-eac20fc3309c" />
+
 
 ### Assumptions
-- 
-- 
-- 
+1.A customer must exist before making a reservation.
+2.Walk-in customers are treated as reservations with immediate booking.
+3.Each reservation is linked to exactly one table.
+4.An order can only be placed after a reservation exists.
+5.One bill is generated per reservation (covers food + service).
+6.A reservation can be served by one or more waiters.
 
----
-
-## Instructions for Students
-
-1. Complete **all three scenarios** (A, B, C).  
-2. Identify entities, relationships, and attributes for each.  
-3. Draw ER diagrams using **draw.io / diagrams.net** or hand-drawn & scanned.  
-4. Fill in all tables and assumptions for each scenario.  
-5. Export the completed Markdown (with diagrams) as **a single PDF**
+### RESULT
+Thus the ER Diagram for each scenario has been drawn and explained successfully.
