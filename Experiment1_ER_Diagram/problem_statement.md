@@ -35,12 +35,13 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 
 
 ### Assumptions
+```
 1.Each member must have at least one active membership.
 2.A program may have multiple trainers, but at least one is mandatory.
 3.Members can attend multiple sessions; attendance is recorded separately.
 4.Personal training sessions are modeled as “Session” with specific trainer and member.
 5.Payments can be for either membership fees or personal sessions
-
+```
 # Scenario B: City Library Event & Book Lending System
 
 **Business Context:**  
@@ -67,12 +68,13 @@ The Central Library wants to manage book lending and cultural events.
 <img width="1075" height="446" alt="image" src="https://github.com/user-attachments/assets/13569170-994e-41e4-8674-d194cc4d659a" />
 
 ### Assumptions
+```
 1.A member must exist before borrowing a book or registering for an event.
 2.A book can only be borrowed by one member at a time.
 3.Every event must be hosted in exactly one room.
 4.Events may have zero or multiple speakers.
 5.Overdue fines are calculated and stored in Loan.
-
+```
 # Scenario C: Restaurant Table Reservation & Ordering
 
 **Business Context:**  
@@ -99,12 +101,13 @@ A popular restaurant wants to manage reservations, orders, and billing.
 
 
 ### Assumptions
+```
 1.A customer must exist before making a reservation.
 2.Walk-in customers are treated as reservations with immediate booking.
 3.Each reservation is linked to exactly one table.
 4.An order can only be placed after a reservation exists.
 5.One bill is generated per reservation (covers food + service).
 6.A reservation can be served by one or more waiters.
-
+```
 ### RESULT
 Thus the ER Diagram for each scenario has been drawn and explained successfully.
